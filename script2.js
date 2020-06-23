@@ -35,14 +35,14 @@ console.log(has * has)
 
 
 
-let hash = #;
-let count = #;
+let hash = "#";
+let count = "#";
 
 for (let i = 0; i<10; i++){
 
 let result  = hash + count
     console.log(result);
-    let count= count+#
+    let count= count+"#"
     
 }
 
@@ -102,4 +102,46 @@ for(let count2 = 1; count2<=100; count2++){
  }else{
      console.log(count2);
  }
+}
+
+//function which returns the smallest of two numbers
+function min (a,b){
+    if (b == a){
+        return "Both are equal"
+    }else if (a > b) {
+        return b
+    }else{
+        return a
+    }
+}
+// function that returns a number if true or false
+function isEven(number){
+    if(number == 0){
+        return true
+    }else if (number < 0){
+        return isEven(-number)
+    }
+    else if(number == 1){
+        return false
+    }else{
+        return isEven(number-2)
+    }
+}
+// function to count bs
+function countBs(wrd){
+    let wrdcnt =0
+    for(let i = 0; i< wrd.length; i++){
+        if(wrd[i]==="B"){
+            wrdcnt +=1
+        }
+    }return wrdcnt
+}
+// function to NO OF ANY LETTER IN A GIVEN STRING
+function countString(wrd, letter){
+    let wrdcnt =0
+    for(let i = 0; i< wrd.length; i++){
+        if(wrd[i]===letter){
+            wrdcnt +=1
+        }
+    }return wrdcnt
 }
