@@ -145,3 +145,19 @@ function countString(wrd, letter){
         }
     }return wrdcnt
 }
+
+
+
+function zeroPad(number, width){
+    let stringNumber = String(number);
+    while(stringNumber.length < width ){
+        stringNumber = "0" + stringNumber
+    }return stringNumber
+}
+
+function name(cow,goat,lion){
+    console.log(`${zeroPad(cow, 4)} cows`);
+    console.log(`${zeroPad(goat, 5)} goats`);
+    console.log(`${zeroPad(lion,9)}lions`)
+}
+name(9,2,4)
